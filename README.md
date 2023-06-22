@@ -1,15 +1,15 @@
-#controle_atividade_fisica-app
+# controle_atividade_fisica-app
 Este projeto tem como objetivo ajudar um atleta a controlar os seus treinos e a sua evolução.
 
 O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
 
-#Endereço de Deploy - GitHub Pages
+# Endereço de Deploy - GitHub Pages
 https://github.com/gustavoatb/controle_atividade_fisica-app
 
-#Protótipo
+# Protótipo
 https://www.figma.com/file/cW1GqjKLdhoPr0g2Z8D839/Controle-de-Atividade-Fisica?type=design&node-id=0-1&mode=design&t=kNlesDQG9N9uTshb-0
 
-#Checklist
+# Checklist
  - Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
  - Usar componentes de algum framework CSS (Bootstrap, Materialize ou outro)
  - Apresentar as telas com layout responsivo usando ou não algum framework CSS.
@@ -29,7 +29,7 @@ https://www.figma.com/file/cW1GqjKLdhoPr0g2Z8D839/Controle-de-Atividade-Fisica?t
  - Formatar a apresentação de dados com Pipes.
  - Build e deploy da aplicação.
 
-#Manual de execução
+# Manual de execução
  * Clonar o repositório com git clone
  * Fazer checkout no branch develop que contém as modificações mais recentes
  * Abrir o projeto no editor Visual Studio Code (VS Code)
