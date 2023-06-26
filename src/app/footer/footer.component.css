@@ -1,0 +1,26 @@
+.footer{
+  background: #989898;
+  color: white;
+  padding:25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.autor{
+  background: white;
+  color: #989898;
+  padding: 7px;
+  text-align: center;
+}
+
+

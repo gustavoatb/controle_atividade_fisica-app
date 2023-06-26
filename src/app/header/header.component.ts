@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  titulo: string = 'Controle de Atividade Física';
+
+  onButtonClickHome(){
+    alert('Você será redirecionado para a página de Cadastro de Atividades');
+  }
+
+  onButtonClickContato(){
+    alert('Você será redirecionado para a página de Contato');
+  }
+
 }

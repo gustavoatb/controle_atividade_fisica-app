@@ -1,1 +1,18 @@
-<p>header works!</p>
+<div class = "header">
+  <div>
+    <h3>{{ titulo }}</h3>
+  </div>
+  <router-outlet>
+    <div>
+      <button class = "btn" type = "button" (click) = "this.onButtonClickHome()">Home</button>
+    </div>
+  </router-outlet>
+  <router-outlet>
+    <div>
+      <button class = "btn" type = "button" (click) = "this.onButtonClickContato()">Contato</button>
+    </div>
+  </router-outlet>
+</div>
+
+
+
