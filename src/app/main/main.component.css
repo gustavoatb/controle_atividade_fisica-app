@@ -1,6 +1,16 @@
-.header{
-  background: white;
-  padding: 0px;
-  display: grid;
-  grid-template-columns: 0px 0px 0px 0px;
+.imagens{
+  max-width: 1200px;
+  height:auto;
+  float:none;
+  margin:auto;
+  padding:0px;
+  background:white;
+  position:center;
 }
+
+.imagem_principal2{
+  width: 154%;
+  height: 154%;
+  padding:0px;
+}
+

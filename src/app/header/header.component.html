@@ -1,17 +1,21 @@
 <div class = "header">
-  <div>
+  <div class = "titulo">
     <h3>{{ titulo }}</h3>
   </div>
-  <router-outlet>
-    <div>
-      <button class = "btn" type = "button" (click) = "this.onButtonClickHome()">Home</button>
-    </div>
-  </router-outlet>
-  <router-outlet>
-    <div>
-      <button class = "btn" type = "button" (click) = "this.onButtonClickContato()">Contato</button>
-    </div>
-  </router-outlet>
+  <div class="col s12 m6">
+    <a routerLink="home">
+      <div class="card-panel amber accent-4 center my-card-button">
+        <span class="white-text flow-text"> Home </span>
+      </div>
+    </a>
+  </div>
+  <div class="col s12 m6">
+    <a routerLink="contato">
+      <div class="card-panel amber accent-4 center my-card-button">
+        <span class="white-text flow-text"> Contato </span>
+      </div>
+    </a>
+  </div>
 </div>
 
 
