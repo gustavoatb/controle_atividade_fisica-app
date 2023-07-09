@@ -1,5 +1,28 @@
+.informacoesbasicas {
+  width: 150%;
+  float: left;
+  color: #999;
+  margin-bottom: 6px;
+  font-family:'calibri';
+  font-size: 20px;
+}
+.imc {
+  width: 150%;
+  float: left;
+  color: #999;
+  margin-bottom: 6px;
+  font-family:'calibri';
+  font-size: 20px;
+}
+.planejamento {
+  width: 150%;
+  float: left;
+  color: #999;
+  margin-bottom: 6px;
+  font-family:'calibri';
+  font-size: 20px;
+}
 .formulario {
-  max-width:600px;
   height:auto;
   float:none;
   margin:auto;
@@ -7,16 +30,16 @@
   margin-bottom:1em;
   border-radius:6px;
   background:#fff;
-  box-shadow: 1px 0px 1.2px 0px #ccc;
   position:relative;
+  width:80%;
 }
 .formulario:before {
-  width:0;
+  width:80%;
   height:0;
   border:15px solid transparent;
   border-bottom-color:#fff;
   content:"";
-  position:absolute;
+  position:relative;
   left:6%;
   top:-4.5%;
   margin-top:-4px;
@@ -25,25 +48,29 @@
 }
 .formulario label  {
   float:left;
-  width:100%;
+  width:80%;
   margin-bottom:1.2em;
 }
 .formulario label span {
-  width: 100%;
+  width: 80%;
   float: left;
   color: #999;
   margin-bottom: 6px;
-  font-family:'open_sansregular';
+  font-family:'calibri';
+  font-size: 20px;
+  width:80%;
 }
 .formulario label input  {
   font-size:1em;
   color:#555;
-  font-family:'open_sansregular';
+  font-family:'calibri';
+  font-size: 20px;
   outline:none;
   border:1px #dee5ed solid;
   border-radius:4px;
   padding:0.6em;
   transition: 0.3s;
+  width:80%;
 }
 .formulario label select {
   font-size:1em;
@@ -53,6 +80,7 @@
   padding:0.6em;
   outline:none;
   transition: 0.3s;
+  width:80%;
 }
 .formulario label textarea {
   font-size:1em;
@@ -62,33 +90,36 @@
   padding:0.6em;
   outline:none;
   transition: 0.3s;
+  width:80%;
 }
 .formulario label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
 .formulario label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
 .formulario label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
 .formulario button.btn-salvar {
   background-color:rgb(37,174,230);
-  width:100%; display:block;
+  width:25%; display:block;
   margin:auto; cursor:pointer;
   border-radius:4px;
   border:0;
   padding:0.8em 0em;
   color:#fff;
   font-size:1.3em;
-  font-family:'open_sansbold';
+  font-family:'calibri';
+  font-size: 20px;
   text-align: center;
   transition: 0.3s;
 }
 .formulario button.btn-cancelar {
   background-color:rgb(37,174,230);
-  width:100%; display:block;
+  width:25%; display:block;
   margin:auto; cursor:pointer;
   border-radius:4px;
   border:0;
   padding:0.8em 0em;
   color:#fff;
   font-size:1.3em;
-  font-family:'open_sansbold';
+  font-family:'calibri';
+  font-size: 20px;
   text-align: center;
   transition: 0.3s;
 }

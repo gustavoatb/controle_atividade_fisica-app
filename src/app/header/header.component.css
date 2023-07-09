@@ -15,7 +15,16 @@
   font-size: 24px;
 }
 
-.a router-outlet{
+.router-outlet{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  padding: 0px;
+  display: grid;
+  font-size: 20px;
+}
+
+.span.white-text.flow-text{
   background-color: transparent;
   border-color: transparent;
   color: white;
