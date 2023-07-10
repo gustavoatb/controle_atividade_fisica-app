@@ -4,22 +4,30 @@
   <form action="#" method="post" enctype="multipart/form-data">
 
     <label>
-        <span><i class="icon icon-user-1"></i> Nome</span>
-        <input type="text" name="nome" required="">
+        <span><i class="icon icon-user"></i> Nome</span>
+        <input type="text" name="nome"
+        pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+"
+        required="">
     </label>
 
     <label>
         <span><i class="icon icon-email"></i> E-mail</span>
-        <input type="text" name="email" class="fade_8S">
+        <input type="text" name="email"
+        pattern="/^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i;"
+        class="fade_8S">
     </label>
     <label>
-        <span><i class="icon icon-flag"></i> Assunto</span>
-        <input type="text" name="assunto" required="">
+        <span><i class="icon icon-assunto"></i> Assunto</span>
+        <input type="text" name="assunto"
+        pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+).(\.[a-z]{2,3})$"
+        required="">
     </label>
 
     <label>
-        <span><i class="icon icon-comment"></i> Mensagem</span>
-         <textarea name="mensagem" rows="3" required=""></textarea><br /><br /><br /><br /><br />
+        <span><i class="icon icon-mensagem"></i> Mensagem</span>
+         <textarea name="mensagem" rows="3"
+         pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+"
+         required=""></textarea><br /><br /><br /><br /><br />
     </label>
 
     <input type="hidden" name="acao" value="enviar" />

@@ -1,7 +1,7 @@
 .informacoesbasicas {
   width: 150%;
   float: left;
-  color: #999;
+  color: #707070;
   margin-bottom: 6px;
   font-family:'calibri';
   font-size: 20px;
@@ -9,7 +9,7 @@
 .imc {
   width: 150%;
   float: left;
-  color: #999;
+  color: #707070;
   margin-bottom: 6px;
   font-family:'calibri';
   font-size: 20px;
@@ -17,7 +17,7 @@
 .planejamento {
   width: 150%;
   float: left;
-  color: #999;
+  color: #707070;
   margin-bottom: 6px;
   font-family:'calibri';
   font-size: 20px;
@@ -54,7 +54,7 @@
 .formulario label span {
   width: 80%;
   float: left;
-  color: #999;
+  color: #707070;
   margin-bottom: 6px;
   font-family:'calibri';
   font-size: 20px;
@@ -62,7 +62,7 @@
 }
 .formulario label input  {
   font-size:1em;
-  color:#555;
+  color:#707070;
   font-family:'calibri';
   font-size: 20px;
   outline:none;
@@ -74,7 +74,7 @@
 }
 .formulario label select {
   font-size:1em;
-  color:#555;
+  color:#707070;
   border:1px #dee5ed solid;
   border-radius:4px;
   padding:0.6em;
@@ -84,7 +84,7 @@
 }
 .formulario label textarea {
   font-size:1em;
-  color:#555;
+  color:#707070;
   border:1px #dee5ed solid;
   border-radius:4px;
   padding:0.6em;

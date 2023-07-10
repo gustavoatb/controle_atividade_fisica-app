@@ -1,5 +1,5 @@
 .formularioContato {
-  width:50%;
+  width:80%;
   height:auto;
   float:none;
   margin:auto;
@@ -30,14 +30,14 @@
 .formularioContato label span {
   width: 80%;
   float: left;
-  color: #999;
+  color: #707070;
   margin-bottom: 6px;
   font-family:'calibri';
   font-size: 20px;
 }
 .formularioContato label input  {
   font-size:1em;
-  color:#555;
+  color:#707070;
   font-family:'calibri';
   font-size: 20px;
   outline:none;
@@ -49,7 +49,7 @@
 }
 .formularioContato label select {
   font-size:1em;
-  color:#555;
+  color:#707070;
   border:1px #dee5ed solid;
   border-radius:4px;
   padding:0.6em;
@@ -59,7 +59,7 @@
 }
 .formularioContato label textarea {
   font-size:1em;
-  color:#555;
+  color:#707070;
   border:1px #dee5ed solid;
   border-radius:4px;
   padding:0.6em;

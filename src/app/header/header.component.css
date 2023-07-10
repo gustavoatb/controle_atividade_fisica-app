@@ -1,34 +1,76 @@
 .header{
-  background: #b9b9b9;
+  background: #707070;
   color: white;
   padding: 0px;
   display: grid;
-  grid-template-columns: 2000px 130px 150px;
+  grid-template-columns: 1950px 155px 180px 130px;
   font-size: 22px;
 }
 
 .titulo{
-  background: #b9b9b9;
+  background: #707070;
   color: white;
-  padding: 2px;
+  padding: 25px;
+  display: grid;
+  font-size: 26px;
+}
+
+.a{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 0px;
   display: grid;
   font-size: 24px;
 }
 
-.router-outlet{
+.routerLink{
   background-color: transparent;
   border-color: transparent;
   color: white;
+  text-decoration: none;
   padding: 0px;
   display: grid;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-.span.white-text.flow-text{
+.span{
   background-color: transparent;
   border-color: transparent;
   color: white;
+  text-decoration: none;
   padding: 0px;
   display: grid;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.white-text{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 0px;
+  display: grid;
+  font-size: 24px;
+}
+
+.white-text:link{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 0px;
+  display: grid;
+  font-size: 24px;
+}
+
+.white-text:hover{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 0px;
+  display: grid;
+  font-size: 24px;
 }

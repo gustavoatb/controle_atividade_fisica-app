@@ -1,9 +1,10 @@
 .footer{
-  background: #b9b9b9;
+  background: #707070;
   color: white;
   padding:40px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px;
+  font-size: 18px;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
@@ -30,7 +31,7 @@ main {
 
 .autor{
   background: white;
-  color: #b9b9b9;
+  color: #707070;
   padding: 5px;
   text-align: center;
   margin-left: 0 auto;
