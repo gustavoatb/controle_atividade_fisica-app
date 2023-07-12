@@ -1,13 +1,14 @@
 <div class = "formulario">
 
-    <form action="#" method="post" enctype="multipart/form-data">
+    <form action="#" method="post" enctype="multipart/form-data"
+    (ngSubmit)="salvarNome()">
 
     <div class = "informacoesbasicas">
       <p> Informações Básicas</p>
       <p>_______________________________________________________________________________________________________________________________________________________________________________</p><br>
-      <label>
+      <label for="nome">
         <span><i class="icon icon-nome"></i> Nome</span>
-        <input type="text" name="nome"
+        <input type="text" name="nome" [(ngModel)]="nome"
         pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+"
         required="">
       </label>
@@ -69,7 +70,7 @@
     <input type="hidden" name="acao" value="cancelar" />
     <button class="btn-cancelar" title="Cancelar"><b class="icon icon-paper-plane-o"> Cancelar</b></button><br /><br /><br />
     <input type="hidden" name="acao" value="salvar" />
-    <button class="btn-salvar" title="Salvar"><b class="icon icon-paper-plane-o"> Salvar</b></button>
+    <button type="submit" class="btn-salvar" title="Salvar"><b class="icon icon-paper-plane-o"> Salvar</b></button>
 
   </form>
 

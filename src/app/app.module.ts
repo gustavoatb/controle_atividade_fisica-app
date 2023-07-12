@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +8,8 @@ import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ResultadoComponent } from './resultado/resultado.component';
+import { FormsModule } from '@angular/forms';
+import { LocalStorageService } from 'angular-web-storage';
 
 @NgModule({
   declarations: [
@@ -23,9 +23,10 @@ import { ResultadoComponent } from './resultado/resultado.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
