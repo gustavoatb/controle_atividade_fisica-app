@@ -15,7 +15,7 @@ export class HomeComponent {
 
   salvarNome() {
     this.localStorage.set('nome', this.nome);
-}
+  }
 
 }
 
