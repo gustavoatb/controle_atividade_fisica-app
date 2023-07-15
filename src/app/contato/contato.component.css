@@ -86,3 +86,20 @@
 .formularioContato button.btn-envia:hover {
   background-color:#333;
 }
+
+.formularioContato button.showAlert {
+  background-color:rgb(37,174,230);
+  width:25%; display:block;
+  margin:auto; cursor:pointer;
+  border-radius:4px;
+  border:0;
+  padding:0.8em 0em;
+  color:#fff;
+  font-size:1.3em;
+  font-family:'calibri';
+  text-align: center;
+  transition: 0.3s;
+}
+.formularioContato button.showAlert:hover {
+  background-color:#333;
+}

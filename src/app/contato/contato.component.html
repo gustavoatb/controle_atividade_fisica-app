@@ -29,7 +29,16 @@
     </label>
 
     <input type="hidden" name="acao" value="enviar" />
-    <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+    <button type="reset" onclick="funcao1()" class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+
+    <button onclick="showAlert()">Cancelar</button>
+
+    <div *ngIf="show">
+      <div class="alert">
+        <span class="closebtn" onclick="closeAlert()">&times;</span>
+        <strong>Olá!</strong> Seu contato foi enviado com sucesso!
+      </div>
+    </div>
 
     </form>
     </div>

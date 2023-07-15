@@ -5,6 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './contato.component.html',
   styleUrls: ['./contato.component.css']
 })
+
 export class ContatoComponent {
+items: any;
+mostrarElemento: any;
+
+show: boolean = false;
+
+  showAlert() {
+    this.show = true;
+  }
+
+  closeAlert() {
+    this.show = false;
+  }
 
 }

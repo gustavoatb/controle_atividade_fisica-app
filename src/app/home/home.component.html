@@ -46,12 +46,16 @@
         <input type="text" name="inicio"
         pattern="^((0[1-9]|[12]\d)\/(0[1-9]|1[0-2])|30\/(0[13-9]|1[0-2])|31\/(0[13578]|1[02]))\/\d{4}$"
         required="">
+        <p>{{ data | date }}</p>
+        <p>{{ data | date:'dd/MM/yyyy' }}</p>
       </label>
       <label>
         <span><i class="icon icon-termino"></i> Termino</span>
         <input type="text" name="termino"
         pattern="^((0[1-9]|[12]\d)\/(0[1-9]|1[0-2])|30\/(0[13-9]|1[0-2])|31\/(0[13578]|1[02]))\/\d{4}$"
         required="">
+        <p>{{ data | date }}</p>
+        <p>{{ data | date:'dd/MM/yyyy' }}</p>
       </label>
       <label>
         <span><i class="icon icon-objetivos"></i> Principais Objetivos</span>

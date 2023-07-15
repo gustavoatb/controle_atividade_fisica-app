@@ -10,6 +10,7 @@ import { LocalStorageService } from 'angular-web-storage';
 export class HomeComponent {
 
   nome: string | undefined;
+  data: string | number | Date | undefined;
 
   constructor(private localStorage: LocalStorageService) { }
 
