@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './main/main.component';
-import { HomeComponent } from './home/home.component';
-import { ContatoComponent } from './contato/contato.component';
+import { Routes, RouterModule } from '@angular/router';
+import { FormularioComponent } from './formulario/formulario.component';
+import { ListaPessoasComponent } from './lista-pessoas/lista-pessoas.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'contato', component: ContatoComponent},
+  { path: 'formulario', component: FormularioComponent },
+  { path: 'lista-pessoas', component: ListaPessoasComponent },
+  { path: '', redirectTo: '/formulario', pathMatch: 'full' },
+  { path: '**', redirectTo: '/formulario' }
 ];
 
 @NgModule({
@@ -14,3 +15,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

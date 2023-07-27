@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href=/controle_atividade_fisica-app/",
+    "ghpages": "angular-cli-ghpages --dir=dist/controle_atividade_fisica-app",
+    "deploy": "ng run build & npm run ghpages",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "json:server": "json-server --watch db.json",
@@ -27,6 +29,7 @@
     "material-icons": "^1.13.8",
     "materialize-css": "^1.0.0",
     "ngx-mask": "^16.1.9",
+    "nvm": "^0.0.4",
     "popper.js": "^1.14.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

@@ -1,0 +1,17 @@
+<div>
+  <input type="text" [(ngModel)]="novaPessoa.nome" placeholder="Nome">
+  <input type="text" [(ngModel)]="novaPessoa.email" placeholder="E-mail">
+  <input type="text" [(ngModel)]="novaPessoa.telefone" placeholder="Telefone">
+  <button (click)="adicionarPessoa()">Adicionar Pessoa</button>
+  <button (click)="limparCampos()">Limpar Campos</button>
+</div>
+
+<ul *ngIf="pessoas.length > 0">
+  <li *ngFor="let pessoa of pessoas">
+    <strong>Nome:</strong> {{ pessoa.nome }}<br>
+    <strong>E-mail:</strong> {{ pessoa.email }}<br>
+    <strong>Telefone:</strong> {{ pessoa.telefone }}<br><br>
+  </li>
+</ul>
+
+<button *ngIf="pessoas.length > 0" (click)="limparLista()">Limpar lista</button>
