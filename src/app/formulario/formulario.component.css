@@ -1,0 +1,85 @@
+/* formulario.component.css */
+
+/* Estilo para o container do formulário */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Estilo para o botão Adicionar Pessoa */
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para o botão Limpar Campos */
+button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+button:nth-child(2):hover {
+  background-color: #b02a37;
+}
+
+/* Estilo para a tabela de pessoas cadastradas */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para a mensagem quando não há pessoas cadastradas */
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo para a lista de pessoas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para o botão Limpar lista */
+button:nth-child(4) {
+  display: block;
+  margin: 20px auto;
+}
