@@ -51,6 +51,14 @@ export class FormularioComponent implements OnInit {
     }
   }
 
+  isCamposPreenchidos(): boolean {
+    return (
+      this.novaPessoa.tipo.trim() !== '' &&
+      this.novaPessoa.distancia.trim() !== '' &&
+      this.novaPessoa.tempo.trim() !== ''
+    );
+  }
+
   private atualizarLocalStorage() {
     localStorage.setItem('pessoas', JSON.stringify(this.pessoas));
   }

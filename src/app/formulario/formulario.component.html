@@ -1,8 +1,8 @@
-<div>
+<div class="form-container">
   <input type="text" [(ngModel)]="novaPessoa.tipo" placeholder="Tipo"><br><br>
   <input type="text" [(ngModel)]="novaPessoa.distancia" placeholder="Distância"><br><br>
   <input type="text" [(ngModel)]="novaPessoa.tempo" placeholder="Tempo"><br><br>
-  <button (click)="adicionarPessoa()">Adicionar Treino</button>
+  <button (click)="adicionarPessoa()" [disabled]="!isCamposPreenchidos()">Adicionar Treino</button><br><br><br>
   <button (click)="limparCampos()">Limpar Campos</button><br><br>
   <h4>Peso</h4>
   <input type="number" [(ngModel)]="novaPessoa.peso" placeholder="Peso (kg)">
