@@ -1,21 +1,21 @@
-<h2>Lista de Pessoas Cadastradas</h2>
+<h2>Lista de Treinos Cadastrados</h2>
 
 <table *ngIf="pessoas.length > 0">
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>E-mail</th>
-      <th>Telefone</th>
+      <th>Tipo</th>
+      <th>Distância</th>
+      <th>Tempo</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let pessoa of pessoas">
-      <td>{{ pessoa.nome }}</td>
-      <td>{{ pessoa.email }}</td>
-      <td>{{ pessoa.telefone }}</td>
+      <td>{{ pessoa.tipo }}</td>
+      <td>{{ pessoa.distancia }}</td>
+      <td>{{ pessoa.tempo }}</td>
     </tr>
   </tbody>
 </table>
 
-<p *ngIf="pessoas.length === 0">Nenhuma pessoa cadastrada.</p>
+<p *ngIf="pessoas.length === 0">Nenhum treino cadastrado.</p>
 

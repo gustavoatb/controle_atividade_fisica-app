@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Pessoa {
-  nome: string;
-  email: string;
-  telefone: string;
+  tipo: string;
+  distancia: string;
+  tempo: string;
+  peso: number;
+  altura: number;
 }
 
 @Component({
@@ -13,7 +15,8 @@ export interface Pessoa {
 })
 export class FormularioComponent implements OnInit {
   pessoas: Pessoa[] = [];
-  novaPessoa: Pessoa = { nome: '', email: '', telefone: '' };
+  novaPessoa: Pessoa = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
+  imcResultado: number | null = null;
 
   ngOnInit() {
     const storedPessoas = localStorage.getItem('pessoas');
@@ -23,20 +26,29 @@ export class FormularioComponent implements OnInit {
   }
 
   adicionarPessoa() {
-    if (this.novaPessoa.nome.trim() !== '' && this.novaPessoa.email.trim() !== '' && this.novaPessoa.telefone.trim() !== '') {
+    if (this.novaPessoa.tipo.trim() !== '' && this.novaPessoa.distancia.trim() !== '' && this.novaPessoa.tempo.trim() !== '') {
       this.pessoas.push({ ...this.novaPessoa });
-      this.novaPessoa = { nome: '', email: '', telefone: '' };
+      this.novaPessoa = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
       this.atualizarLocalStorage();
     }
   }
 
   limparCampos() {
-    this.novaPessoa = { nome: '', email: '', telefone: '' };
+    this.novaPessoa = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
   }
 
   limparLista() {
     this.pessoas = [];
     this.atualizarLocalStorage();
+  }
+
+  calcularIMC() {
+    if (this.novaPessoa.peso > 0 && this.novaPessoa.altura > 0) {
+      const alturaMetros = this.novaPessoa.altura / 100;
+      this.imcResultado = this.novaPessoa.peso / (alturaMetros * alturaMetros);
+    } else {
+      this.imcResultado = null;
+    }
   }
 
   private atualizarLocalStorage() {

@@ -2,7 +2,7 @@
 
 /* Estilo para o container da lista de pessoas */
 .list-container {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -20,10 +20,12 @@ table {
 th, td {
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  text-align: center;
 }
 
 th {
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 /* Estilo para a mensagem quando não há pessoas cadastradas */

@@ -1,25 +1,33 @@
-/* formulario.component.css */
-
 /* Estilo para o container do formulário */
 .form-container {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centraliza o formulário na horizontal */
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  justify-content: center;
 }
 
 /* Estilo para os campos de entrada */
 input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  width: 100%;
+input[type="text"],
+input[type="text"],
+input[type="number"],
+input[type="number"] {
+  width: 99%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 16px;
+  justify-content: center;
+}
+
+nav {
+  background-color: #007BFF;
+  padding: 10px;
 }
 
 /* Estilo para o botão Adicionar Pessoa */
@@ -72,6 +80,9 @@ p {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 li {
@@ -83,3 +94,17 @@ button:nth-child(4) {
   display: block;
   margin: 20px auto;
 }
+
+/* Estilo para a área do resultado do IMC */
+.resultado-imc {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resultado-imc h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+
