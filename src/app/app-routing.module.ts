@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
-import { ListaPessoasComponent } from './lista-pessoas/lista-pessoas.component';
+import { ListaTreinosComponent } from './lista-treinos/lista-treinos.component';
 
 const routes: Routes = [
   { path: 'formulario', component: FormularioComponent },
-  { path: 'lista-pessoas', component: ListaPessoasComponent },
+  { path: 'lista-treinos', component: ListaTreinosComponent },
   { path: '', redirectTo: '/formulario', pathMatch: 'full' },
   { path: '**', redirectTo: '/formulario' }
 ];

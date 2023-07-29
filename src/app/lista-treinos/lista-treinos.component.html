@@ -1,0 +1,21 @@
+<h2>Lista de Treinos Cadastrados</h2>
+
+<table *ngIf="treinos.length > 0">
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Distância</th>
+      <th>Tempo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let treino of treinos">
+      <td>{{ treino.tipo }}</td>
+      <td>{{ treino.distancia }}</td>
+      <td>{{ treino.tempo }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="treinos.length === 0">Nenhum treino cadastrado.</p>
+

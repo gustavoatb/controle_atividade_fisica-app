@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface Pessoa {
+export interface Treino {
   tipo: string;
   distancia: string;
   tempo: string;
@@ -14,38 +14,38 @@ export interface Pessoa {
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
-  pessoas: Pessoa[] = [];
-  novaPessoa: Pessoa = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
+  treinos: Treino[] = [];
+  novoTreino: Treino = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
   imcResultado: number | null = null;
 
   ngOnInit() {
-    const storedPessoas = localStorage.getItem('pessoas');
-    if (storedPessoas) {
-      this.pessoas = JSON.parse(storedPessoas);
+    const storedTreinos = localStorage.getItem('treinos');
+    if (storedTreinos) {
+      this.treinos = JSON.parse(storedTreinos);
     }
   }
 
-  adicionarPessoa() {
-    if (this.novaPessoa.tipo.trim() !== '' && this.novaPessoa.distancia.trim() !== '' && this.novaPessoa.tempo.trim() !== '') {
-      this.pessoas.push({ ...this.novaPessoa });
-      this.novaPessoa = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
+  adicionarTreino() {
+    if (this.novoTreino.tipo.trim() !== '' && this.novoTreino.distancia.trim() !== '' && this.novoTreino.tempo.trim() !== '') {
+      this.treinos.push({ ...this.novoTreino });
+      this.novoTreino = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
       this.atualizarLocalStorage();
     }
   }
 
   limparCampos() {
-    this.novaPessoa = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
+    this.novoTreino = { tipo: '', distancia: '', tempo: '', peso: 0, altura: 0 };
   }
 
   limparLista() {
-    this.pessoas = [];
+    this.treinos = [];
     this.atualizarLocalStorage();
   }
 
   calcularIMC() {
-    if (this.novaPessoa.peso > 0 && this.novaPessoa.altura > 0) {
-      const alturaMetros = this.novaPessoa.altura / 100;
-      this.imcResultado = this.novaPessoa.peso / (alturaMetros * alturaMetros);
+    if (this.novoTreino.peso > 0 && this.novoTreino.altura > 0) {
+      const alturaMetros = this.novoTreino.altura / 100;
+      this.imcResultado = this.novoTreino.peso / (alturaMetros * alturaMetros);
     } else {
       this.imcResultado = null;
     }
@@ -53,13 +53,13 @@ export class FormularioComponent implements OnInit {
 
   isCamposPreenchidos(): boolean {
     return (
-      this.novaPessoa.tipo.trim() !== '' &&
-      this.novaPessoa.distancia.trim() !== '' &&
-      this.novaPessoa.tempo.trim() !== ''
+      this.novoTreino.tipo.trim() !== '' &&
+      this.novoTreino.distancia.trim() !== '' &&
+      this.novoTreino.tempo.trim() !== ''
     );
   }
 
   private atualizarLocalStorage() {
-    localStorage.setItem('pessoas', JSON.stringify(this.pessoas));
+    localStorage.setItem('treinos', JSON.stringify(this.treinos));
   }
 }

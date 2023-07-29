@@ -1,21 +1,21 @@
 <div class="form-container">
-  <input type="text" [(ngModel)]="novaPessoa.tipo" placeholder="Tipo"><br><br>
-  <input type="text" [(ngModel)]="novaPessoa.distancia" placeholder="Distância"><br><br>
-  <input type="text" [(ngModel)]="novaPessoa.tempo" placeholder="Tempo"><br><br>
-  <button (click)="adicionarPessoa()" [disabled]="!isCamposPreenchidos()">Adicionar Treino</button><br><br><br>
+  <input type="text" [(ngModel)]="novoTreino.tipo" placeholder="Tipo"><br><br>
+  <input type="text" [(ngModel)]="novoTreino.distancia" placeholder="Distância"><br><br>
+  <input type="text" [(ngModel)]="novoTreino.tempo" placeholder="Tempo"><br><br>
+  <button (click)="adicionarTreino()" [disabled]="!isCamposPreenchidos()">Adicionar Treino</button><br><br>
   <button (click)="limparCampos()">Limpar Campos</button><br><br>
   <h4>Peso</h4>
-  <input type="number" [(ngModel)]="novaPessoa.peso" placeholder="Peso (kg)">
+  <input type="number" [(ngModel)]="novoTreino.peso" placeholder="Peso (kg)">
   <h4>Altura</h4>
-  <input type="number" [(ngModel)]="novaPessoa.altura" placeholder="Altura (cm)"><br><br>
+  <input type="number" [(ngModel)]="novoTreino.altura" placeholder="Altura (cm)"><br><br>
   <button (click)="calcularIMC()">Calcular IMC</button>
 </div>
 
-<ul *ngIf="pessoas.length > 0">
-  <li *ngFor="let pessoa of pessoas">
-    <strong>Tipo:</strong> {{ pessoa.tipo }}<br>
-    <strong>Distância:</strong> {{ pessoa.distancia }}<br>
-    <strong>Tempo:</strong> {{ pessoa.tempo }}<br><br>
+<ul *ngIf="treinos.length > 0">
+  <li *ngFor="let treino of treinos">
+    <strong>Tipo:</strong> {{ treino.tipo }}<br>
+    <strong>Distância:</strong> {{ treino.distancia }}<br>
+    <strong>Tempo:</strong> {{ treino.tempo }}<br><br>
   </li>
 </ul>
 
@@ -23,4 +23,4 @@
   <h3>IMC: {{ imcResultado }}</h3>
 </div>
 
-<button *ngIf="pessoas.length > 0" (click)="limparLista()">Limpar lista</button>
+<button *ngIf="treinos.length > 0" (click)="limparLista()">Limpar lista</button>

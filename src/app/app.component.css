@@ -1,15 +1,15 @@
-:host{
+:host {
   display:flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-main{
+main {
   flex: 0 auto;
   padding: 0px !important;
 }
 
-h1{
+h1 {
   text-decoration: none;
   color: #302f2f;
   font-size: 26px;
@@ -47,5 +47,4 @@ ul {
 li {
   margin-bottom: 10px;
 }
-
 
